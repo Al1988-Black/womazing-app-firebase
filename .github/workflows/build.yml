@@ -5,9 +5,9 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: production
-    # env:
-    #   REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
+    # environment: production
+    env:
+      REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
