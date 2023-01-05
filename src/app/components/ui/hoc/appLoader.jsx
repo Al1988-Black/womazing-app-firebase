@@ -23,7 +23,6 @@ const AppLoader = ({ children }) => {
     const isLoggedIn = useSelector(getIsLoggedIn());
     const usersLoadingStatus = useSelector(getIsLoadingUsersStatus());
     const currentUserData = useSelector(getCurrentUserData());
-    console.log(isLoggedIn);
 
     useEffect(() => {
         dispatch(loadCategoriesList());

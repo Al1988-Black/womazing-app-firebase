@@ -39,7 +39,7 @@ function App() {
                     <Route path="/completed" component={CompletedPage} />
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/" exact component={Main} />
-                    <Redirect from="*" to="/shop" />
+                    <Redirect from="*" to="/" />
                 </Switch>
                 <Footer />
                 <ToastContainer />

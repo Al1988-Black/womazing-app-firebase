@@ -4,7 +4,7 @@ import TextField from "../common/form/textField";
 import SelectField from "../common/form/selectField";
 import CheckBoxField from "../common/form/checkBoxField";
 import { useDispatch, useSelector } from "react-redux";
-import { signUp } from "../../store/users";
+import { signUp, getAuthError } from "../../store/users";
 import { getCities } from "../../store/cities";
 
 const RegistorForm = () => {
@@ -17,6 +17,7 @@ const RegistorForm = () => {
         licence: false,
         admin: false
     });
+    const registorError = useSelector(getAuthError());
     const [errors, setErrors] = useState({});
     const cities = useSelector(getCities());
     const citiesList = cities.map((citiesName) => ({
@@ -136,6 +137,7 @@ const RegistorForm = () => {
             >
                 Подтвердить <a>лицензионное соглашение</a>
             </CheckBoxField>
+            {registorError && <p className="text-danger">{registorError}</p>}
             <button
                 type="submit"
                 disabled={!isValid}
