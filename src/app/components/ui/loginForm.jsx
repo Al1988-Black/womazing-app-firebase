@@ -8,6 +8,7 @@ import { getAuthError, logIn } from "../../store/users";
 
 const LoginForm = () => {
     const dispatch = useDispatch();
+    console.log(process.env);
     const [data, setData] = useState({
         email: "",
         password: "",
