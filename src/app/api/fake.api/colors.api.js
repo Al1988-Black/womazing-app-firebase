@@ -1,0 +1,42 @@
+export const colors = [
+    {
+        _id: "77coloreeb7f6fgeed471198",
+        name: "Кремовый",
+        color: "#927876"
+    },
+    {
+        _id: "77coloreeb7f6fgeed471100",
+        name: "Белый",
+        color: "#D4D4D4"
+    },
+    {
+        _id: "77coloreeb7f6fgeed4711012",
+        name: "Розовый",
+        color: "#FD9696"
+    },
+    {
+        _id: "77coloreeb7f6fgeed471101",
+        name: "Бежевый",
+        color: "#FDC796"
+    },
+    {
+        _id: "77coloreeb7f6fgeed471102",
+        name: "Черный",
+        color: "#474A51"
+    },
+    {
+        _id: "77coloreeb7f6fgeed471103",
+        name: "Синий",
+        color: "#1414FF"
+    },
+    {
+        _id: "77coloreeb7f6fgeed471104",
+        name: "желтый",
+        color: "#EDFF21"
+    }
+];
+const fetchAll = () => colors;
+
+export default {
+    fetchAll
+};

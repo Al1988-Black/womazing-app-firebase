@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "67user3eeb7f6fgeed471815",
+        "name": "Ирина Чернова",
+        "email": "test1@mail.com",
+        "password": "Test1234",
+        "phone": "+79991113344",
+        "city": "25city3eeb7f6fgeed470003",
+        "isAdmin": false
+    },
+    {
+        "_id": "67user3eeb7f6fgeed471816",
+        "name": "Светлана Иванова",
+        "email": "test2@mail.com",
+        "password": "Test1234",
+        "phone": "+799911142233",
+        "isAdmin": false
+    },
+    {
+        "_id": "67user3eeb7f6fgeed471816",
+        "name": "Юлиана Мурова",
+        "email": "test3@mail.com",
+        "password": "Test1234",
+        "phone": "+799911141122",
+        "isAdmin": false
+    }
+]
