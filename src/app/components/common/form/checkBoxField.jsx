@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CheckBoxField = ({ name, onChange, value, children, error, css }) => {
+const CheckBoxField = ({ name: nameCheckbox, onChange, value, children, error, css }) => {
     const handleChange = ({ target }) => {
-        onChange({ name: name, value: !value });
+        onChange({ name: nameCheckbox, value: !value });
     };
     const getInputClasses = () => {
         return "form-check-input" + (error ? " is-invalid" : "");
@@ -13,12 +13,12 @@ const CheckBoxField = ({ name, onChange, value, children, error, css }) => {
             <input
                 className={css[1] || getInputClasses()}
                 type="checkbox"
-                id={name}
+                id={nameCheckbox}
                 checked={value}
                 onChange={handleChange}
                 value=""
             />
-            <label className={css[2] || "form-check-label"} htmlFor={name}>
+            <label className={css[2] || "form-check-label"} htmlFor={nameCheckbox}>
                 {children}
             </label>
             {error && <div className="invalid-feedback">{error}</div>}
