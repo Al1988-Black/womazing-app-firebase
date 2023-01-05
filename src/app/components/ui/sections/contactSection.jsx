@@ -1,13 +1,13 @@
 import React from "react";
-import useMockData from "../../../utils/mockData";
+// import useMockData from "../../../utils/mockData";
 const contactSection = () => {
-    const { error, initialize, progress, status } = useMockData();
-    const handleClick = () => {
-        initialize();
-    };
+    // const { error, initialize, progress, status } = useMockData();
+    // const handleClick = () => {
+    //     initialize();
+    // };
     return (
         <section>
-            <div className="container mt-5">
+            {/* <div className="container mt-5">
                 <h1>Main Page</h1>
                 <h3>Инициализация данных в FireBase</h3>
                 <ul>
@@ -18,7 +18,7 @@ const contactSection = () => {
                 <button className="btn btn-primary" onClick={handleClick}>
                     Инициализировать
                 </button>
-            </div>
+            </div> */}
         </section>
     );
 };

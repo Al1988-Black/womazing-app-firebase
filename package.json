@@ -2,6 +2,7 @@
     "name": "womazing-app",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://Al1988-Black.github.io/womazing-app-firebase/",
     "dependencies": {
         "-": "^0.0.1",
         "@reduxjs/toolkit": "^1.9.0",
@@ -29,7 +30,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -59,6 +61,7 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-react": "^7.31.10",
+        "gh-pages": "^4.0.0",
         "prettier": "2.7.1"
     }
 }
