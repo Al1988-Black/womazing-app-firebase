@@ -1,7 +1,7 @@
 import axios from "axios";
 import localStoradgeService from "./localStoradge.service";
 
-const apiKey = process.env.REACT_APP_APIKey
+const apiKey = process.env.REACT_APP_APIKEY
 
 const httpAuth = axios.create({
     baseURL: "https://identitytoolkit.googleapis.com/v1/",
