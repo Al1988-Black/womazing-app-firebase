@@ -13,9 +13,8 @@ jobs:
         run: |
           npm ci
           npm run build
-      env:
-      REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
-
+        env:
+        REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
